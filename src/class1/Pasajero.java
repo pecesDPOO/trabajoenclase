@@ -9,6 +9,5 @@ public class Pasajero extends Persona {
 		this.id = id;
 		this.tagid = tagid;
 	}
-	public 
 	
 }
