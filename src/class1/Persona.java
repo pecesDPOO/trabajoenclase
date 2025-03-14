@@ -1,6 +1,6 @@
 package class1;
 
-public class Persona {
+public abstract class Persona {
 	private String nombre;
 	private int id;
 }
