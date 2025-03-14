@@ -1,29 +1,33 @@
 package class1;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.HashMap;
-import class1.Estacion;
-import class1.Paradero;
-import class1.Persona;
-import class1.RutasSITP;
-import class1.RutasTransmi;
-import class1.SITPbus;
-import class1.TransmilenioBus;
-
 public class Transmilenio {
-	private List<SITPbus> busesSITP;
-	private List<TransmilenioBus> busesTransmi;
-	private List<RutasSITP> rutasSITP;
-	private List<RutasTransmi> rutasTransmi;
-	
-	public Transmilenio(List<SITPbus> busesSITP, List<TransmilenioBus> busesTransmi, List<RutasSITP> rutasSITP,
-			List<RutasTransmi> rutasTransmi) {
-		super();
-		this.busesSITP = busesSITP;
-		this.busesTransmi = busesTransmi;
-		this.rutasSITP = rutasSITP;
-		this.rutasTransmi = rutasTransmi;
-	}
-	
-	
+    private List<SITPbus> busesSITP;
+    private List<TransmilenioBus> busesTransmi;
+    private List<RutasSITP> rutasSITP;
+    private List<RutasTransmi> rutasTransmi;
+    
+    public Transmilenio() {
+        this.busesSITP = new ArrayList<SITPbus>();
+        this.busesTransmi = new ArrayList<TransmilenioBus>();
+        this.rutasSITP = new ArrayList<RutasSITP>();
+        this.rutasTransmi = new ArrayList<RutasTransmi>();
+    }
+
+    public void agregarBusSITP(SITPbus bus) {
+        busesSITP.add(bus);
+    }
+
+    public void agregarBusTransmi(TransmilenioBus bus) {
+        busesTransmi.add(bus);
+    }
+
+    public void agregarRutaSITP(RutasSITP ruta) {
+        rutasSITP.add(ruta);
+    }
+
+    public void agregarRutaTransmi(RutasTransmi ruta) {
+        rutasTransmi.add(ruta);
+    }
 }
+
